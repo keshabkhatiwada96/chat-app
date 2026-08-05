@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="chat-container">
+
+    <div class="header">
+      <div class="dot"></div>
+      <div>
+        <h1>Group Chat</h1>
+        <p>Connected live</p>
+      </div>
+    </div>
+
+    <div class="username-bar">
+      <label>Your name:</label>
+      <input id="username" type="text" placeholder="Enter your name..." maxlength="20" />
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="input-area">
+      <input id="msg-input" type="text" placeholder="Type a message..." autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+
+</body>
+</html>
